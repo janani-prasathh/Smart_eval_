@@ -1,0 +1,38 @@
+[
+  {
+    "id": "2C30342_2025-11-02T22:53:27.788988",
+    "usn": "2C30342",
+    "role": "student",
+    "rating": 5,
+    "comment": "FAIR EVALUATION.",
+    "subject": "OS - Internal 1",
+    "timestamp": "2025-11-02T22:53:27.789000"
+  },
+  {
+    "id": "2C30345_2025-11-03T11:27:07.015302",
+    "usn": "2C30345",
+    "role": "student",
+    "rating": 5,
+    "comment": "its fair evaluation!!",
+    "subject": "OS - Internal 1",
+    "timestamp": "2025-11-03T11:27:07.015313"
+  },
+  {
+    "id": "2C30327_2025-11-04T01:58:31.456916",
+    "usn": "2C30327",
+    "role": "student",
+    "rating": 2,
+    "comment": "Request for linent evalution.",
+    "subject": "OS - Internal 1",
+    "timestamp": "2025-11-04T01:58:31.456928"
+  },
+  {
+    "id": "2C30339_2025-11-04T14:28:05.329823",
+    "usn": "2C30339",
+    "role": "student",
+    "rating": 1,
+    "comment": "sbcjwwndnsncsjcnjsnsfisjdc",
+    "subject": "OS - Internal 1",
+    "timestamp": "2025-11-04T14:28:05.329840"
+  }
+]

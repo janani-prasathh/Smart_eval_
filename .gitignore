@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+venv/
+env/
+ENV/
+.env
+
+# MacOS files
+.DS_Store
+
+# Temporary outputs / caches
+data/temp_*.pdf
+outputs/diagram_temp/

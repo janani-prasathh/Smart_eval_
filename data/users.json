@@ -1,0 +1,58 @@
+{
+  "bhumi": {
+    "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "email": "bhumi",
+    "role": "teacher",
+    "created_at": "2025-11-02T16:07:03.373807",
+    "evaluations": []
+  },
+  "bhumika": {
+    "password": "123456",
+    "email": "bhumikakalasareddy12703@gmail.com",
+    "role": "teacher",
+    "created_at": "2025-11-03T11:06:55.963805",
+    "evaluations": []
+  },
+  "sara": {
+    "password": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
+    "email": "saratahoor13@gmail.com",
+    "role": "teacher",
+    "created_at": "2025-11-03T11:13:37.762332",
+    "evaluations": []
+  },
+  "srusti": {
+    "password": "8588310a98676af6e22563c1559e1ae20f85950792bdcd0c8f334867c54581cd",
+    "email": "bhumika122@outlook.com",
+    "role": "teacher",
+    "created_at": "2025-11-04T01:37:34.487267",
+    "evaluations": []
+  },
+  "arpita": {
+    "password": "e54fc6b51915e222ba6196747a19ebb8dfa651fd2b46a385a0ded647fbfefda0",
+    "email": "Abhiramgangavathi03@gmail.com",
+    "role": "teacher",
+    "created_at": "2025-11-04T01:51:22.193025",
+    "evaluations": []
+  },
+  "JANANI": {
+    "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "email": "janani@gmail.com",
+    "role": "teacher",
+    "created_at": "2026-09-25T11:34:21.580115",
+    "evaluations": []
+  },
+  "JANANI p": {
+    "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "email": "janani@gmail.com",
+    "role": "admin",
+    "created_at": "2026-09-25T11:38:36.440630",
+    "evaluations": []
+  },
+  "ajay": {
+    "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "email": "ajay@gmail.com",
+    "role": "teacher",
+    "created_at": "2026-09-27T15:47:26.482402",
+    "evaluations": []
+  }
+}

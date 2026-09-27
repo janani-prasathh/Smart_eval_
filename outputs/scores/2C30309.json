@@ -1,0 +1,179 @@
+{
+  "usn": "2C30309",
+  "subject": "OS - Internal 1",
+  "evaluated_by": "sara",
+  "timestamp": "2025-11-03T23:10:47.024505",
+  "diagram_count": 5,
+  "evaluation_report": "## Student Evaluation Report\n\nThis report provides feedback on your performance in Test-01 for the Operating Systems course.\n\nOverall, your performance was moderate, demonstrating strong computational skills in CPU scheduling but requiring improvement in foundational theoretical concepts and definitions. You successfully attempted questions worth 23 marks.\n\nYour ability to construct and calculate metrics for FCFS, SRTF, and Preemptive Priority scheduling algorithms was excellent. However, there were significant conceptual gaps in defining system call types and distinguishing between processes and threads.\n\nYou included 4 detailed Gantt charts in your answer sheet, which were essential for solving the scheduling problems accurately.\n\n### Strengths\n\n*   **CPU Scheduling Mastery:** You demonstrated excellent command over FCFS, SRTF, and Preemptive Priority scheduling algorithms, achieving correct Gantt charts, Turnaround Times (TAT), and Waiting Times (WT) for these three methods.\n*   **System Call Types (Core):** Your explanations for File Management and Process Control system calls were detailed and accurate.\n*   **Structured Calculation:** Your presentation of scheduling calculations (listing CT, TAT, WT, and averages) was clear and easy to follow.\n\n### Areas for Improvement\n\n*   **Round Robin (RR) Logic:** The Gantt chart constructed for the Round Robin algorithm was fundamentally flawed, violating the quantum rule (q=2ms) by running processes for extended, non-preemptive durations. Review the mechanism of time slicing carefully.\n*   **Conceptual Definitions:** Your distinction between a Process and a Thread was incorrect, failing to address key differences like resource sharing (address space) and weight. Ensure you understand why threads are considered \"lightweight.\"\n*   **System Call Types (Advanced):** The explanations for Communication and Protection system calls were either too vague or conceptually incorrect (e.g., confusing Protection with error detection). Focus on the core function of these calls (e.g., Protection controls resource access).\n*   **Quiz Fundamentals:** Review basic OS concepts related to process states (Ready state) and the components involved in process execution (Program Counter).",
+  "analytics_data": {
+    "total_score": {
+      "awarded": 14,
+      "max": 30,
+      "percentage": 46.67
+    },
+    "section_wise": [
+      {
+        "section": "Module 1",
+        "awarded": 5.5,
+        "max": 8,
+        "percentage": 68.75
+      },
+      {
+        "section": "Module 2",
+        "awarded": 6.5,
+        "max": 10,
+        "percentage": 65.0
+      },
+      {
+        "section": "Quiz",
+        "awarded": 2,
+        "max": 5,
+        "percentage": 40.0
+      }
+    ],
+    "question_wise": [
+      {
+        "question": "2 b)",
+        "awarded": 5.5,
+        "max": 8,
+        "percentage": 68.75
+      },
+      {
+        "question": "4 a)",
+        "awarded": 6.5,
+        "max": 8,
+        "percentage": 81.25
+      },
+      {
+        "question": "4 b)",
+        "awarded": 0,
+        "max": 2,
+        "percentage": 0.0
+      },
+      {
+        "question": "Quiz",
+        "awarded": 2,
+        "max": 5,
+        "percentage": 40.0
+      }
+    ],
+    "diagram_performance": {
+      "required_estimate": 6,
+      "found_estimate": 4
+    },
+    "detailed_breakdown": [
+      {
+        "question": "2 b)",
+        "part": "Definition",
+        "description": "Define system calls",
+        "feedback": "Definition is slightly vague but captures the idea of accessing OS services.",
+        "marks_awarded": 1.5,
+        "max_marks": 2
+      },
+      {
+        "question": "2 b)",
+        "part": "Process Control",
+        "description": "Explain Process Control calls",
+        "feedback": "Good explanation covering end, abort, and attribute management.",
+        "marks_awarded": 1,
+        "max_marks": 1
+      },
+      {
+        "question": "2 b)",
+        "part": "File Management",
+        "description": "Explain File Management calls",
+        "feedback": "Excellent detail covering create, open, read, write, and close.",
+        "marks_awarded": 1,
+        "max_marks": 1
+      },
+      {
+        "question": "2 b)",
+        "part": "Device Management",
+        "description": "Explain Device Management calls",
+        "feedback": "Adequate explanation focusing on resource request and release.",
+        "marks_award": 0.75,
+        "max_marks": 1
+      },
+      {
+        "question": "2 b)",
+        "part": "Information Maintenance",
+        "description": "Explain Information Maintenance calls",
+        "feedback": "Correctly identifies the purpose of transferring system data (time, date) to the user.",
+        "marks_awarded": 0.75,
+        "max_marks": 1
+      },
+      {
+        "question": "2 b)",
+        "part": "Communication",
+        "description": "Explain Communication calls",
+        "feedback": "Explanation is too brief and lacks specific keywords like send/receive messages or connection establishment.",
+        "marks_awarded": 0.5,
+        "max_marks": 1
+      },
+      {
+        "question": "2 b)",
+        "part": "Protection",
+        "description": "Explain Protection calls",
+        "feedback": "Incorrectly relates protection to error checking during compilation, missing the core concept of resource access control.",
+        "marks_awarded": 0,
+        "max_marks": 1
+      },
+      {
+        "question": "4 a)",
+        "part": "FCFS",
+        "description": "Calculate FCFS metrics",
+        "feedback": "Gantt chart and all calculations (TAT, WT, Averages) are perfectly correct.",
+        "marks_awarded": 2,
+        "max_marks": 2
+      },
+      {
+        "question": "4 a)",
+        "part": "SRTF",
+        "description": "Calculate SRTF metrics",
+        "feedback": "Gantt chart structure and all resulting calculations (TAT, WT, Averages) are correct.",
+        "marks_awarded": 2,
+        "max_marks": 2
+      },
+      {
+        "question": "4 a)",
+        "part": "RR (q=2ms)",
+        "description": "Calculate RR metrics",
+        "feedback": "The Gantt chart violates the quantum rule (q=2ms) by allowing processes to run for 5ms or 7ms continuously. Calculations are based on this incorrect chart.",
+        "marks_awarded": 0.5,
+        "max_marks": 2
+      },
+      {
+        "question": "4 a)",
+        "part": "Priority (Preemptive)",
+        "description": "Calculate Priority metrics",
+        "feedback": "Gantt chart structure and all resulting calculations (TAT, WT, Averages) are correct.",
+        "marks_awarded": 2,
+        "max_marks": 2
+      },
+      {
+        "question": "4 b)",
+        "part": "Distinction",
+        "description": "Distinguish Process and Thread",
+        "feedback": "The distinction provided is conceptually incorrect, confusing processes with multi-programming and failing to address resource sharing or weight.",
+        "marks_awarded": 0,
+        "max_marks": 2
+      },
+      {
+        "question": "Quiz",
+        "part": "Q1, Q3",
+        "description": "Unix fork, IPC definition",
+        "feedback": "Correctly answered Q1 and Q3.",
+        "marks_awarded": 2,
+        "max_marks": 2
+      },
+      {
+        "question": "Quiz",
+        "part": "Q2, Q4, Q5",
+        "description": "Ready state, PC, Process states",
+        "feedback": "Incorrectly answered Q2, Q4, and Q5.",
+        "marks_awarded": 0,
+        "max_marks": 3
+      }
+    ]
+  }
+}

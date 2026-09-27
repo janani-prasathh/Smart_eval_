@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  # 1. PostgreSQL Relational Database
+  db:
+    image: postgres:16-alpine
+    container_name: smarteval_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: smarteval_user
+      POSTGRES_PASSWORD: smarteval_password
+      POSTGRES_DB: smarteval
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U smarteval_user -d smarteval"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # 2. Redis Cache & Job Broker
+  redis:
+    image: redis:7-alpine
+    container_name: smarteval_redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # 3. High-Throughput FastAPI REST Backend
+  api:
+    build: .
+    container_name: smarteval_api
+    restart: always
+    command: uvicorn server.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://smarteval_user:smarteval_password@db:5432/smarteval
+      - REDIS_URL=redis://redis:6379/0
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    volumes:
+      - .:/app
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  # 4. Streamlit Interactive Demo UI
+  ui:
+    build: .
+    container_name: smarteval_ui
+    restart: always
+    command: streamlit run app.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://api:8000
+    volumes:
+      - .:/app
+    depends_on:
+      - api
+
+volumes:
+  postgres_data:
+  redis_data:

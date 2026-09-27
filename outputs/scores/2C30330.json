@@ -1,0 +1,209 @@
+{
+  "usn": "2C30330",
+  "subject": "OS - Internal 1",
+  "evaluated_by": "bhumi",
+  "timestamp": "2025-11-02T22:43:35.824566",
+  "diagram_count": 12,
+  "evaluation_report": "## Evaluation Report\n\nThis report summarizes your performance on the Operating Systems Test-01.\n\nOverall, your performance demonstrates a strong theoretical understanding of foundational OS concepts (Module 1), but significant difficulty applying computational algorithms (Module 2). Your score reflects a high level of mastery in definitional and descriptive questions.\n\nYou attempted 2 explicit diagrams (OS services structure and flow), which were clear and well-labeled, meeting the requirements for the questions attempted.\n\n### Strengths\n\n*   **Module 1 Mastery:** You achieved a perfect score in Module 1, demonstrating excellent knowledge of Operating System definitions, services, and key distinctions (Multi-processor vs. Clustered systems, Multiprogramming vs. Multitasking).\n*   **Conceptual Clarity (Theory):** Your explanations for OS services and system types were accurate, detailed, and used appropriate terminology.\n*   **Basic Quiz Knowledge:** You correctly answered questions related to IPC, Program Counter function, and the number of process states.\n\n### Areas for Improvement\n\n*   **CPU Scheduling Calculations (Q4 a):** This section requires immediate attention. While you were able to draw the initial Gantt charts for FCFS and SRTF, all subsequent calculations for Waiting Time (WT) and Turnaround Time (TAT) were incorrect. You appear to be confusing Completion Time or Start Time with the actual WT/TAT definitions.\n*   **Algorithm Application:** You did not complete the Round Robin (RR) or Priority scheduling sections, and the partial RR attempt showed errors in managing the Ready Queue sequence. You must practice the step-by-step execution of preemptive algorithms.\n*   **Process vs. Thread Distinction:** While you correctly identified the heavyweight/lightweight nature, you made a significant conceptual error regarding the relationship between processes and threads (e.g., stating a thread can have multiple processes simultaneously). Review the concept of shared address space and process containment.\n*   **Quiz Specifics:** Review specific Unix system calls (like `fork`) and the precise definitions of process states (Ready vs. Running).",
+  "analytics_data": {
+    "total_score": {
+      "awarded": 20,
+      "max": 30,
+      "percentage": 66.67
+    },
+    "section_wise": [
+      {
+        "section": "Module 1",
+        "awarded": 15,
+        "max": 15,
+        "percentage": 100.0
+      },
+      {
+        "section": "Module 2",
+        "awarded": 2,
+        "max": 10,
+        "percentage": 20.0
+      },
+      {
+        "section": "Quiz",
+        "awarded": 3,
+        "max": 5,
+        "percentage": 60.0
+      }
+    ],
+    "question_wise": [
+      {
+        "question": "1 a)",
+        "awarded": 7,
+        "max": 7,
+        "percentage": 100.0
+      },
+      {
+        "question": "1 b)",
+        "awarded": 8,
+        "max": 8,
+        "percentage": 100.0
+      },
+      {
+        "question": "4 a)",
+        "awarded": 1,
+        "max": 8,
+        "percentage": 12.5
+      },
+      {
+        "question": "4 b)",
+        "awarded": 1,
+        "max": 2,
+        "percentage": 50.0
+      },
+      {
+        "question": "Quiz",
+        "awarded": 3,
+        "max": 5,
+        "percentage": 60.0
+      }
+    ],
+    "diagram_performance": {
+      "required_estimate": 3,
+      "found_estimate": 2
+    },
+    "detailed_breakdown": [
+      {
+        "question": "1 a)",
+        "part": "Definition",
+        "description": "OS intermediary definition",
+        "feedback": "Accurate definition of OS as an intermediary.",
+        "marks_awarded": 1,
+        "max_marks": 1
+      },
+      {
+        "question": "1 a)",
+        "part": "Diagram",
+        "description": "OS services structure diagram",
+        "feedback": "Excellent diagram illustrating the structure and flow of OS services and system calls.",
+        "marks_awarded": 2,
+        "max_marks": 2
+      },
+      {
+        "question": "1 a)",
+        "part": "Explanation",
+        "description": "Explanation of OS services",
+        "feedback": "Covered key services including UI, Program Execution, I/O, Resource Allocation, and Protection clearly.",
+        "marks_awarded": 4,
+        "max_marks": 4
+      },
+      {
+        "question": "1 b)",
+        "part": "i",
+        "description": "MP vs Clustered systems",
+        "feedback": "Strong distinction provided, correctly identifying Asymmetric/Symmetric types for both systems.",
+        "marks_awarded": 4,
+        "max_marks": 4
+      },
+      {
+        "question": "1 b)",
+        "part": "ii",
+        "description": "Multiprogramming vs Multitasking",
+        "feedback": "Clear conceptual distinction between loading multiple jobs (MP) and time-sharing/responsiveness (MT).",
+        "marks_awarded": 4,
+        "max_marks": 4
+      },
+      {
+        "question": "4 a)",
+        "part": "FCFS Gantt",
+        "description": "FCFS Gantt Chart",
+        "feedback": "Gantt chart is correct.",
+        "marks_awarded": 0,
+        "max_marks": 1
+      },
+      {
+        "question": "4 a)",
+        "part": "FCFS Calculation",
+        "description": "FCFS Avg WT/TAT",
+        "feedback": "Calculations for Waiting Time and Turnaround Time are incorrect, showing conceptual errors in applying the formulas (using CT instead of TAT/WT).",
+        "marks_awarded": 0,
+        "max_marks": 1
+      },
+      {
+        "question": "4 a)",
+        "part": "SRTF Gantt",
+        "description": "SRTF Gantt Chart",
+        "feedback": "Gantt chart structure is correct.",
+        "marks_awarded": 1,
+        "max_marks": 1
+      },
+      {
+        "question": "4 a)",
+        "part": "SRTF Calculation",
+        "description": "SRTF Avg WT/TAT",
+        "feedback": "Calculations for Waiting Time and Turnaround Time are incorrect.",
+        "marks_awarded": 0,
+        "max_marks": 1
+      },
+      {
+        "question": "4 a)",
+        "part": "RR (q=2ms)",
+        "description": "RR Gantt/Calculation",
+        "feedback": "Attempted Gantt chart is incomplete and shows incorrect sequencing (P4 placed before P3/P1 in the ready queue). No calculations provided.",
+        "marks_awarded": 0,
+        "max_marks": 2
+      },
+      {
+        "question": "4 a)",
+        "part": "Priority (Preemptive)",
+        "description": "Priority Gantt/Calculation",
+        "feedback": "No attempt made for Priority scheduling.",
+        "marks_awarded": 0,
+        "max_marks": 2
+      },
+      {
+        "question": "4 b)",
+        "part": "Distinction",
+        "description": "Process vs Thread distinction",
+        "feedback": "Correctly identified heavyweight/lightweight and thread as the unit of CPU utilization, but included a conceptual error regarding threads having multiple processes.",
+        "marks_awarded": 1,
+        "max_marks": 2
+      },
+      {
+        "question": "Quiz Q1",
+        "part": "MCQ",
+        "description": "Unix process creation call",
+        "feedback": "Incorrect answer (should be fork).",
+        "marks_awarded": 0,
+        "max_marks": 1
+      },
+      {
+        "question": "Quiz Q2",
+        "part": "MCQ",
+        "description": "Ready state definition",
+        "feedback": "Incorrect answer (selected Running state).",
+        "marks_awarded": 0,
+        "max_marks": 1
+      },
+      {
+        "question": "Quiz Q3",
+        "part": "MCQ",
+        "description": "IPC definition",
+        "feedback": "Correct answer.",
+        "marks_awarded": 1,
+        "max_marks": 1
+      },
+      {
+        "question": "Quiz Q4",
+        "part": "MCQ",
+        "description": "Next instruction address",
+        "feedback": "Correct answer (Program Counter).",
+        "marks_awarded": 1,
+        "max_marks": 1
+      },
+      {
+        "question": "Quiz Q5",
+        "part": "MCQ",
+        "description": "Process states count",
+        "feedback": "Correct answer (5 states).",
+        "marks_awarded": 1,
+        "max_marks": 1
+      }
+    ]
+  }
+}
